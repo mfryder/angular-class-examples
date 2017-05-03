@@ -33,5 +33,7 @@ angular.module('myApp.view7', ['ngRoute'])
                 console.log(error);
             });
     }
-    
+    $scope.$on('roll-call', function(){
+        console.log("View7Ctrl Reporting!!!");
+    });
 }]);

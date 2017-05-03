@@ -39,3 +39,10 @@ td {
 th {
   padding: 2em;
 }
+
+.red {
+  background-color: #FA787E;
+}
+.green {
+   background-color: #78FA89 !important;
+}

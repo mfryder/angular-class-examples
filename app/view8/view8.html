@@ -1,0 +1,46 @@
+<h2>Multiple Car Queries</h2>
+<p>Press the button to try out making multiple queries at once</p>
+
+<div>
+    <p>Async</p>
+    <div ng-if="finishedasynchonda.value === false" class ="red" ng-class"{'green': finishedasynchonda.value}">
+        <p>Honda Query</p>
+    </div>
+    <div ng-if="finishedasynchonda.value === true" class ="green" ng-class"{'green': finishedasynchonda.value}">
+        <p>Honda Query</p>
+    </div>
+    <div ng-if="finishedasyncacura.value === false" class ="red" ng-class"{'green': finishedasyncacura.value}">
+        <p>Acura Query</p>
+    </div>
+    <div ng-if="finishedasyncacura.value === true" class ="green" ng-class"{'green': finishedasyncacura.value}">
+        <p>Acura Query</p>
+    </div>
+    <div ng-if="finishedasynctoyota.value === false" class ="red" ng-class"{'green': finishedasynctoyota.value}">
+        <p>Toyota Query</p>
+    </div>
+    <div ng-if="finishedasynctoyota.value === true" class ="green" ng-class"{'green': finishedasynctoyota.value}">
+        <p>Toyota Query</p>
+    </div>
+    <button type=button ng-click="getDataAsync()">Async Car Query</button>
+</div>
+<div>
+    <div  ng-if="finishedsynchonda.value ===false" class ="red" ng-class"{'green': finishedsynchonda.value}">
+        <p>Honda Query</p>
+    </div>
+    <div  ng-if="finishedsynchonda.value ===true" class ="green" ng-class"{'green': finishedsynchonda.value}">
+        <p>Honda Query</p>
+    </div>
+    <div  ng-if="finishedsyncacura.value === false"class ="red" ng-class"{'green': finishedsyncacura.value}">
+        <p>Acura Query</p>
+    </div>
+    <div  ng-if="finishedsyncacura.value === true"class ="green" ng-class"{'green': finishedsyncacura.value}">
+        <p>Acura Query</p>
+    </div>
+    <div  ng-if="finishedsynctoyota.value===false"class ="red" ng-class"{'green': finishedsynctoyota.value}">
+        <p>Toyota Query</p>
+    </div>
+    <div  ng-if="finishedsynctoyota.value===true"class ="green" ng-class"{'green': finishedsynctoyota.value}">
+        <p>Toyota Query</p>
+    </div>
+    <button type=button ng-click="getDataSync()">Sync Car Query</button>
+</div>

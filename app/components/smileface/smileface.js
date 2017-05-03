@@ -39,5 +39,13 @@ angular.module('smileFace', [])
                 }
             }
         }
+        $scope.$on('roll-call', function(){
+            console.log("SmileFace Reporting!!!");
+            $scope.$emit("reporting");
+        });
+
+        $scope.$on("reporting", function(){
+            console.log("Reported by Smily");
+        })
     }
 })
