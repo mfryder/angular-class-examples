@@ -1,0 +1,13 @@
+<p>Size:</p>
+<select ng-model="size" ng-options="label for label in sizeOptions" ng-change="changeSize(size)"></select>
+<p>Count:</p>
+<input ng-model="count" type=number min=0 max={{max}} ng-change="changeCount(count)"></input>
+<div ng-if="set.size==='small'">
+    <img ng-repeat="num in countArray" src="components/smileface/assets/smile-32x32.png">
+</div>
+<div ng-if="set.size==='medium'">
+    <img ng-repeat="num in countArray" src="components/smileface/assets/smile-64x64.png">
+</div>
+<div ng-if="set.size==='large'">
+    <img ng-repeat="num in countArray" src="components/smileface/assets/smile-128x128.png">
+</div>

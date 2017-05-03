@@ -1,0 +1,14 @@
+<h2>BY Reference</h2>
+<p>Change by reference occured: {{reference}}</p>
+<p ng-if="changed===true">Old Reference: {{oldReference}}</p>
+<button type=button ng-click="updateReference()">Press me to detect change by reference</button>
+<button type=button ng-click="clearReference()">Press me to clear the reference</button>
+<br />
+<h2>BY Collection</h2>
+<p>Change by collection occured: {{collection}}</p>
+<p ng-if="collectionChanged===true">Old Collection: {{oldCollection}}</p>
+<button type=button ng-click="updateCollection()">Press me to detect change by collection</button>
+<h2>BY Value</h2>
+<p>Change by value occured: {{value}}</p>
+<p ng-if="valueChanged===true">Old Value: {{oldValue}}</p>
+<button type=button ng-click="updateValue()">Press me to detect change by value</button>

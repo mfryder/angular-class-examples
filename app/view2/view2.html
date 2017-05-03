@@ -1,5 +1,5 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<ol>
+  <li ng-repeat="fruit in typesOfFruits">{{fruit}}
+    <p ng-if="fruit === 'Kiwi'">Mike loves this fruit!</p>
+  </li>
+</ol>
